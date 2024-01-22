@@ -6,7 +6,7 @@ using System.Numerics;
     - I Improved the process of saving and loading to save as a .csv file 
     that could be opened in Excel (make sure to account for quotation 
     marks and commas correctly in your content.
-    - I used "Thread.Sleep()" in class Journal to inprove the user experience.
+    - I used "Thread.Sleep()" in class Journal to improve the user experience.
 */
 
 class Program
