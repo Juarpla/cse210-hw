@@ -34,6 +34,7 @@ class Scripture
         string text = "";
         for (int i = 0; i < _words.Count; i++)
         {
+            // validating if word is already hidden
             if (_words[i].IsHidden())
             {
                 text += underscores(_words[i].GetDisplayText());
@@ -69,6 +70,7 @@ class Scripture
         return wordsList;
     }
 
+    // replaced by many underscores as there are characters
     private string underscores(string word) {
         int numberCharacters = word.Length;
         string guionesBajos = new string('_', numberCharacters);
