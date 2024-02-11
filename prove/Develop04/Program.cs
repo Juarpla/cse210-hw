@@ -13,10 +13,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        menuInterface();
+        MenuInterface();
     }
 
-    private static void menuInterface()
+    private static void MenuInterface()
     {
         string menu =
         """ 
