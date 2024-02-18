@@ -176,14 +176,4 @@ class GoalManager
             _goals.Add(Goal.ToGoal(goalDTO));
         }
     }
-
-    public int GetScore()
-    {
-        return _score;
-    }
-
-    public List<Goal> GetGoals()
-    {
-        return _goals;
-    }
 }
