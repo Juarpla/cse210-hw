@@ -16,7 +16,16 @@ class Appointments : Tool
 
     public override void Run()
     {
-        DateTime dateTime = DateTime.Parse(_appointmentDate);
+        DateTime dateTime;
+        try
+        {
+            dateTime = DateTime.Parse(_appointmentDate);
+        }
+        catch (System.Exception e)
+        {
+            Console.WriteLine($"¡Error, date format: {e.Message}");
+            return;
+        }
         TimeSpan timeUntilAppointment = dateTime - DateTime.Now;
 
         Notification notification = new Notification("Appointment: ", _name, (timeUntilAppointment/1000) + "");
