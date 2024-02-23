@@ -1,9 +1,14 @@
 using System;
 
+// Final Project: CRMSystemApp
+
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello FinalProject World!");
+        CRMSystem crmSystem = new CRMSystem();
+
+        ConsoleUI consoleUI = new ConsoleUI(crmSystem);
+        consoleUI.Run();
     }
 }
