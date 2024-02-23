@@ -16,7 +16,8 @@ class ConsoleUI
         Console.WriteLine("\n> Welcome to the CRM System!");
         while (true)
         {
-            Console.WriteLine("\n1. About Clients");
+            Console.WriteLine("\n-> Options:");
+            Console.WriteLine("1. About Clients");
             Console.WriteLine("2. About Leads");
             Console.WriteLine("3. About Former Clients");
             Console.WriteLine("4. About Campaigns");
